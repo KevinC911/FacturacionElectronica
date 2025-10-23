@@ -1,0 +1,1129 @@
+{
+	"info": {
+		"_postman_id": "a45966ad-966e-44a9-a208-759c4d3af1ba",
+		"name": "AdventureWorks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25210500"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Add_Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Andrés\",\n  \"surname\": \"Lopez\",\n  \"email\": \"andreslopez@gmail.com\",\n  \"address\": \"Col. Miramonte, San Salvador\",\n  \"phone\": \"7001-2234\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customers/new-customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"new-customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find_Custumer_by_email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customers/by-email/andreslopez@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"by-email",
+								"andreslopez@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All-Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customers/all-customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"all-customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Rafael\",\n    \"surname\": \"Torso\",\n    \"email\": \"rafator@gmail.com\",\n    \"address\": \"El espino, 42 av.Rosa azul\",\n    \"phone\": \"7654-5232\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customers/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"dd476230-eacf-4264-b668-61d3240f0696\",\n    \"name\": \"Sevastian\",\n    \"surname\": \"Aguilar\",\n    \"email\": \"AguilaSevas@gmail.com\",\n    \"address\": \"El espino, 10 av.Rosa azul\",\n    \"phone\": \"7334-5672\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/customers/delete/rafator@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"delete",
+								"rafator@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "Add_rol",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"ADMIN\",\n  \"description\": \"El que organiza al equipo en el area \"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/new-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"new-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find_rol",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"USER\",\n  \"description\": \"Rol de usuario estándar\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/by-name/USER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"by-name",
+								"USER"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_rol",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"USER\",\n  \"description\": \"Rol de usuario estándar para sepillar los baños\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/update-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"update-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_rol",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/roles/delete/Elquenohacenada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"delete",
+								"Elquenohacenada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All-Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/roles/all-roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"all-roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "new-employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb250b01lbmRlekBnbWFpbC5jb20iLCJpYXQiOjE3NjAwNTQxMDcsImV4cCI6MTc2MDA1NzcwN30._dsAi21g58YpEGFnpIc4JARJFkmElXvjUw4X3D_V_-csI4KHfamxrw4ngYc8ad3h",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Relia Feria\",\n    \"surname\": \"Menguado Arista\",\n    \"role\": \"ADMIN\",\n    \"email\": \"ariari@gmail.com\",\n    \"password\": \"holamundo\",\n    \"address\": \"Barrio Abajo, Tegucigalpa\",\n    \"phone\": \"7234-5621\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/new-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"new-employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/by-email/carlosandres@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"by-email",
+								"carlosandres@yahoo.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-employee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Carlos Andrés\",\n    \"surname\": \"Hernández Mejía\",\n    \"role\": \"USER\",\n    \"email\": \"carlosandres@yahoo.com\",\n    \"password\": \"UserSafe789!\",\n    \"address\": \"Barrio Abajo, Tegucigalpa\",\n    \"phone\": \"7234-5621\"\n  }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/all-employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"all-employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Carlos Andrés\",\n    \"surname\": \"Hernández Mejía\",\n    \"role\": \"ADMIN\",\n    \"email\": \"carlosandres@yahoo.com\",\n    \"password\": \"UserSafe789!\",\n    \"address\": \"Barrio Abajo, Tegucigalpa\",\n    \"phone\": \"7234-5621\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/update-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"update-employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/delete/rosimelimeli@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"delete",
+								"rosimelimeli@yahoo.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Qr",
+			"item": [
+				{
+					"name": "New-Qr",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"time\": \"2025-09-10T12:00:00Z\",\n  \"active\": true,\n  \"code\": \"QR-2025-TUV654\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/qrcodes/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"qrcodes",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-by-code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/qrcodes/find-by-code/QR-2025-MNO456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"qrcodes",
+								"find-by-code",
+								"QR-2025-MNO456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllQrs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"2\",  \n  \"time\": \"2025-09-10T12:00:00Z\",\n  \"active\": true,\n  \"code\": \"QR-2025-TUV654\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/qrcodes/all-qrcodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"qrcodes",
+								"all-qrcodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateQr",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"92b5ea46-84d4-485b-8dab-bbf1a41e3a93\",  \n    \"time\": \"2026-09-08T16:45:00.000+00:00\",\n    \"active\": false,\n    \"code\": \"QR-2025-MNO456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/qrcodes/updateQr",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"qrcodes",
+								"updateQr"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/qrcodes/delete/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"qrcodes",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "New-sales",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"totalPrice\": 1250.75,\n  \"saleDate\": \"2025-09-11\",\n  \"account_tags\": \"Empresa Nacional\",\n  \"operation_condition\": \"Crédito\",\n  \"types_of_payment\": \"Transferencia Bancaria\",\n  \"pament_installments\": \"3\",\n  \"treasury_date\": \"2025-09-20T00:00:00Z\",\n  \"payment_due_date\": \"2025-10-20T00:00:00Z\",\n  \"comercial_name\": \"María López\",\n  \"sales_team\": \"Equipo Zona Norte\",\n  \"journal_entry\": \"Cuentas por Cobrar\",\n  \"Proyect\": \"Construcción Residencial\",\n  \"Description\": \"Venta de materiales de construcción para proyecto habitacional\",\n  \"employee_id\":\"116c9946-d2a3-4ffc-9826-4aa908bcdd65\",\n  \"customer_id\":\"c9d3b1b7-9dd1-42b9-a03c-8f58c0a2a26c\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/new-sale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"new-sale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-sale",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"2\",  \n  \"time\": \"2025-09-10T12:00:00Z\",\n  \"active\": true,\n  \"code\": \"QR-2025-TUV654\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/find-by-id/d864a8f5-c534-4e6c-9195-7177e0d8a5d1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"find-by-id",
+								"d864a8f5-c534-4e6c-9195-7177e0d8a5d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-sale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"d864a8f5-c534-4e6c-9195-7177e0d8a5d1\",\n    \"totalPrice\": 16.75,\n    \"saleDate\": \"2025-09-11\",\n    \"account_tags\": \"Empresa Nacional\",\n    \"operation_condition\": \"Crédito\",\n    \"types_of_payment\": \"Transferencia Bancaria\",\n    \"pament_installments\": \"3\",\n    \"treasury_date\": \"2025-09-20T00:00:00.000+00:00\",\n    \"payment_due_date\": \"2025-10-20T00:00:00.000+00:00\",\n    \"comercial_name\": \"María López\",\n    \"sales_team\": \"Equipo Zona Norte\",\n    \"journal_entry\": \"Cuentas por Cobrar\",\n    \"description\": \"Venta de materiales de construcción para proyecto habitacional\",\n    \"proyect\": \"Construcción Residencial\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/update-sale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"update-sale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-sale",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/delete-sale/d864a8f5-c534-4e6c-9195-7177e0d8a5d1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"delete-sale",
+								"d864a8f5-c534-4e6c-9195-7177e0d8a5d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-sales",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"2\",  \n  \"time\": \"2025-09-10T12:00:00Z\",\n  \"active\": true,\n  \"code\": \"QR-2025-TUV654\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales/all-sales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"all-sales"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "New-categoty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\":\"Pelotas de futball\",\n    \"description\":\"Pelota para jugar futball echa de cuero para partidos de alto nivel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/categories/new-category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categories",
+								"new-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categories/findByName/Pelotas de futba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categories",
+								"findByName",
+								"Pelotas de futba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categories/delete-cactegory/3188aa8a-c817-4d6f-8c48-198c21ea3b51",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categories",
+								"delete-cactegory",
+								"3188aa8a-c817-4d6f-8c48-198c21ea3b51"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "New-product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productName\": \"Balón de Fútbol Profesional\",\n  \"productNumber\": \"SPORT-2025-100\",\n  \"color\": \"Blanco y negro\",\n  \"price\": 45.99,\n  \"stock\": 120,\n  \"size\": \"Número 5\",\n  \"weight\": \"430 g\",\n  \"model\": \"FIFA-Approved-2025\",\n  \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n  \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n  \"categoryId\": \"d0659c6e-a5b2-4f3d-a0fa-50603ad63eb9\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/new-product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"new-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-by-id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productName\": \"Balón de Fútbol Profesional\",\n  \"productNumber\": \"SPORT-2025-100\",\n  \"color\": \"Blanco y negro\",\n  \"price\": 45.99,\n  \"stock\": 120,\n  \"size\": \"Número 5\",\n  \"weight\": \"430 g\",\n  \"model\": \"FIFA-Approved-2025\",\n  \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n  \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n  \"categoryId\": c1b95e64-9da5-4585-a6c0-70db72fcb1be\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/find-by-id/27484b09-0014-4545-b086-cc8722c205f1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"find-by-id",
+								"27484b09-0014-4545-b086-cc8722c205f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-by-name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productName\": \"Balón de Fútbol Profesional\",\n  \"productNumber\": \"SPORT-2025-100\",\n  \"color\": \"Blanco y negro\",\n  \"price\": 45.99,\n  \"stock\": 120,\n  \"size\": \"Número 5\",\n  \"weight\": \"430 g\",\n  \"model\": \"FIFA-Approved-2025\",\n  \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n  \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n  \"categoryId\": \"bf181af0-3ae7-4dfa-8ab8-3f686cdee691\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/find-by-name/Balón de Fútbol Profesional",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"find-by-name",
+								"Balón de Fútbol Profesional"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upadate-product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":\"80609ee5-ee78-4fb4-a3fc-f22e21da79a3\",\n    \"productName\": \"Balón de Fútbol Profesional\",\n    \"productNumber\": \"SPORT-2025-100\",\n    \"color\": \"Rosado y verde \",\n    \"price\": 45.99,\n    \"stock\": 120,\n    \"size\": \"Número 5\",\n    \"weight\": \"430 g\",\n    \"model\": \"FIFA-Approved-2025\",\n    \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n    \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n    \"categoryId\": \"bb1214ec-b2c5-4978-864d-888885d436e1\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/update-product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"update-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productName\": \"Balón de Fútbol Profesional\",\n  \"productNumber\": \"SPORT-2025-100\",\n  \"color\": \"Blanco y negro\",\n  \"price\": 45.99,\n  \"stock\": 120,\n  \"size\": \"Número 5\",\n  \"weight\": \"430 g\",\n  \"model\": \"FIFA-Approved-2025\",\n  \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n  \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n  \"categoryId\": c1b95e64-9da5-4585-a6c0-70db72fcb1be\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/delete-product/e688fe3a-370f-40cd-9474-029ee3d12e8e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"delete-product",
+								"e688fe3a-370f-40cd-9474-029ee3d12e8e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalesDeteails",
+			"item": [
+				{
+					"name": "Add-producto-to-sale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"quantity\": 3,\n  \"salesid\": \"f9e751b9-5df6-4f73-8ea7-0ee2727c6f45\",\n  \"productId\": \"533fefbf-f895-473f-a489-d58bed5861b4\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/add-productsale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"add-productsale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-by-id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productName\": \"Balón de Fútbol Profesional\",\n  \"productNumber\": \"SPORT-2025-100\",\n  \"color\": \"Blanco y negro\",\n  \"price\": 45.99,\n  \"stock\": 120,\n  \"size\": \"Número 5\",\n  \"weight\": \"430 g\",\n  \"model\": \"FIFA-Approved-2025\",\n  \"description\": \"Balón de fútbol profesional certificado por la FIFA, diseñado para torneos oficiales.\",\n  \"imageUrl\": \"https://mi-tienda.com/images/balon-futbol.png\",\n  \"categoryId\": \"d3c32b04-8b20-414c-82bb-e69fb0dfd916\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/find-by-id/fae8998f-7581-43b3-9198-b0ad486ef696",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"find-by-id",
+								"fae8998f-7581-43b3-9198-b0ad486ef696"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All-Sales-Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"fae8998f-7581-43b3-9198-b0ad486ef696\",\n    \"quantity\": 7,\n    \"salesid\": \"f9e751b9-5df6-4f73-8ea7-0ee2727c6f45\",\n    \"productId\": \"533fefbf-f895-473f-a489-d58bed5861b4\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/all-sales-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"all-sales-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find-SaleDetails-by-sale",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"fae8998f-7581-43b3-9198-b0ad486ef696\",\n    \"quantity\": 7,\n    \"salesid\": \"f9e751b9-5df6-4f73-8ea7-0ee2727c6f45\",\n    \"productId\": \"533fefbf-f895-473f-a489-d58bed5861b4\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/total-sales-amount/f9e751b9-5df6-4f73-8ea7-0ee2727c6f45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"total-sales-amount",
+								"f9e751b9-5df6-4f73-8ea7-0ee2727c6f45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-detail-sale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"fae8998f-7581-43b3-9198-b0ad486ef696\",\n    \"quantity\": 7,\n    \"salesid\": \"f9e751b9-5df6-4f73-8ea7-0ee2727c6f45\",\n    \"productId\": \"533fefbf-f895-473f-a489-d58bed5861b4\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/update-product-sale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"update-product-sale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"quantity\": 3,\n  \"salesid\": \"7878m609-0014-4545-b086-cc8722c205f1\",\n  \"productId\": \"27484b09-0014-4545-b086-cc8722c205f1\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/sales-details/delete-product-sale/f19c1fca-aaaf-432c-a62e-8935d0dbaab4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales-details",
+								"delete-product-sale",
+								"f19c1fca-aaaf-432c-a62e-8935d0dbaab4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"montoMendez@gmail.com\",\n  \"password\": \"$2a$10$BeuzsNSfGSZNty59pbjoC.DQ5CAr0lsVBHXhDDjvGnXGcwqQ8Vnj6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
