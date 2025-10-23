@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AdventureWorksApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AdventureWorksApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.example.adventureworks.html">org.example.adventureworks</a> &gt; AdventureWorksApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.477s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.477s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:46:21.009 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.adventureworks.AdventureWorksApplicationTests]: AdventureWorksApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:46:21.257 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.adventureworks.AdventureWorksApplication for test class org.example.adventureworks.AdventureWorksApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-10-22T21:46:22.108-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.e.a.AdventureWorksApplicationTests     : Starting AdventureWorksApplicationTests using Java 22.0.1 with PID 9608 (started by kevin in C:\Users\kevin\Documents\Codigos y projectos\FacturaElectronica)
+2025-10-22T21:46:22.109-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.e.a.AdventureWorksApplicationTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-10-22T21:46:23.391-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22T21:46:23.393-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-22T21:46:23.463-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.465-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.CustomersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.466-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.468-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.ProductsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.470-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.QrCodeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.472-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.474-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.SalesDetailsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.476-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.adventureworks.repository.SalesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-22T21:46:23.477-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 0 JDBC repository interfaces.
+2025-10-22T21:46:23.494-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22T21:46:23.495-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-22T21:46:23.591-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 8 JPA repository interfaces.
+2025-10-22T21:46:24.499-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T21:46:27.539-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69ce14e6
+2025-10-22T21:46:27.543-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T21:46:27.730-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-22T21:46:27.843-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-22T21:46:27.905-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-22T21:46:28.337-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-22T21:46:29.197-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-22T21:46:30.525-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table categories (id uuid not null, category_name varchar(255), description varchar(255), primary key (id))
+Hibernate: create table customers (id uuid not null, address varchar(255), email varchar(255), name varchar(255), phone varchar(255), surname varchar(255), primary key (id))
+Hibernate: create table employees (id uuid not null, address varchar(255), email varchar(255), name varchar(255), password varchar(255), phone varchar(255), surname varchar(255), roles_id uuid, primary key (id))
+Hibernate: create table information_company (id uuid not null, nit varchar(255), address varchar(255), company_name varchar(255), email varchar(255), phone varchar(255), tax_id varchar(255), primary key (id))
+Hibernate: create table products (id uuid not null, color varchar(255), description varchar(255), image_url varchar(255), model varchar(255), price float(53) not null, product_name varchar(255), product_number varchar(255), size varchar(255), stock integer not null, weight varchar(255), categories_id uuid, primary key (id))
+Hibernate: create table qrcodes (id uuid not null, active boolean not null, code varchar(255), time timestamp(6), primary key (id))
+Hibernate: create table roles (id uuid not null, description varchar(255), role varchar(255), primary key (id))
+Hibernate: create table sales (id uuid not null, description varchar(255), proyect varchar(255), account_tags varchar(255), comercial_name varchar(255), journal_entry varchar(255), operation_condition varchar(255), pament_installments varchar(255), payment_due_date timestamp(6), sale_date varchar(255), sales_team varchar(255), total_price float(53) not null, treasury_date timestamp(6), types_of_payment varchar(255), customer_id uuid, employee_id uuid, qr_code_id uuid, primary key (id))
+Hibernate: create table sales_details (id uuid not null, quantity integer not null, total_price float(53) not null, products_id uuid, sales_id uuid, primary key (id))
+Hibernate: alter table if exists sales drop constraint if exists UK3sn9jdsqimdrfg1n3cq8glqdi
+2025-10-22T21:46:32.390-06:00  WARN 9608 --- [AdventureWorks_api] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-10-22T21:46:32.390-06:00  WARN 9608 --- [AdventureWorks_api] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint &quot;uk3sn9jdsqimdrfg1n3cq8glqdi&quot; of relation &quot;sales&quot; does not exist, skipping
+Hibernate: alter table if exists sales add constraint UK3sn9jdsqimdrfg1n3cq8glqdi unique (qr_code_id)
+Hibernate: alter table if exists employees add constraint FK2mvoxmg8tq8xawflln6bitenj foreign key (roles_id) references roles
+Hibernate: alter table if exists products add constraint FKgro094vh0dp0tly1225wk8u37 foreign key (categories_id) references categories
+Hibernate: alter table if exists sales add constraint FKd94vrikapjd2ews1k4lb71sfg foreign key (customer_id) references customers
+Hibernate: alter table if exists sales add constraint FK2jitm3kpqyikxeo6s0a37v99j foreign key (employee_id) references employees
+Hibernate: alter table if exists sales add constraint FK5ko7052qd3caj6ro6oukex9ud foreign key (qr_code_id) references qrcodes
+Hibernate: alter table if exists sales_details add constraint FKjhinh2qepiwj218n8n11f6fs1 foreign key (products_id) references products
+Hibernate: alter table if exists sales_details add constraint FK9k57fsnt2gom2tvbrft8p9q0x foreign key (sales_id) references sales
+2025-10-22T21:46:33.376-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T21:46:33.966-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-10-22T21:46:34.339-06:00  WARN 9608 --- [AdventureWorks_api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-22T21:46:36.009-06:00  INFO 9608 --- [AdventureWorks_api] [    Test worker] o.e.a.AdventureWorksApplicationTests     : Started AdventureWorksApplicationTests in 14.486 seconds (process running for 16.53)
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\kevin\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 22 oct 2025, 9:46:37 p.m.</p>
+</div>
+</div>
+</body>
+</html>
